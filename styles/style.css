@@ -53,21 +53,23 @@ ol {
   top: 78px;
   left: 0;
   box-sizing: border-box;
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
   display: flex;
   flex-flow: column;
   gap: 16px;
 }
 
 .result__video-container {
-  width: 100%;
-  padding: 0 0 16px 0;
+  box-sizing: content-box;
+  inline-size: auto;
+  block-size: 386px;
   position: relative;
 }
 
 .result__video {
-  width: 100%;
+  inline-size: 100%;
+  block-size: 386px;
 }
 
 .search-form {
@@ -178,7 +180,7 @@ fieldset {
 
 .content__details {
   inline-size: 399px;
-  block-size: 569px;
+  block-size: 534px;
   display: flex;
   flex-flow: column;
   gap: 26px;
