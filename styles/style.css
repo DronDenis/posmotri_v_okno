@@ -12,10 +12,19 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
+  padding: 133px 30px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+}
+
+.content {
+  inline-size: 1140px;
+  block-size: 534px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 
 h1,
@@ -35,4 +44,324 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.result {
+  position: relative;
+  top: 78px;
+  left: 0;
+  box-sizing: border-box;
+  width: 711px;
+  height: 386px;
+}
+
+.result__video-container {
+  width: 100%;
+  padding: 0 0 16px 0;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  inline-size: 212px;
+}
+
+.search-form__fieldset-title {
+  color: #fff;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.search-form__label {
+  inline-size: fit-content;
+  display: flex;
+  gap: 5px;
+  padding-block-start: 5px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-inline-end: 5px;
+  vertical-align: middle;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin-block: 1.5px;
+  position: relative;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.search-form__submit-button {
+  inline-size: 194px;
+  padding: 6px 0 6px 0;
+  block-size: auto;
+  margin-block-start: 20px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: solid 1px #fff;
+  outline-style: double;
+  outline-offset: 2px;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: url(../images/image\ 52.svg), pointer;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.content__details {
+  inline-size: 399px;
+  block-size: 553px;
+  display: flex;
+  flex-flow: column;
+  gap: 26px;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 75px;
+  line-height: 94%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-style: normal;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  inline-size: 399px;
+  block-size: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  gap: 30px;
+  position: relative;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 0;
+}
+
+.content__list-item:hover {
+  cursor: url(../images/image\ 52.svg), pointer;
+  text-decoration: underline;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.content__card-link {
+  text-decoration: none;
+  padding: 0;
+  margin: 2px;
+  display: block;
+}
+
+.content__video-card {
+  inline-size: 394px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  inline-size: 200px;
+  margin-block-start: 6px;
+}
+
+.content__video-card-description {
+  color: #fff;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+  inline-size: 200px;
+}
+
+.content__video-card-thumbnail {
+  inline-size: 194px;
+  block-size: 103px;
+  padding: 0;
+  margin: 0;
+}
+
+.content__video-card-description-container {
+  width: auto;
+  display: flex;
+  flex-flow: column;
+  gap: 6px;
+}
+
+.more-button {
+  inline-size: 100%;
+  block-size: auto;
+  padding: 6px 0 6px 0;
+}
+
+input[type="text"] {
+  color: rgba(255, 255, 255, 0.70);
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  inline-size: 225px;
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  block-size: 27px;
+  padding-inline-start: 0;
+}
+
+input[type="text"]:hover {
+  cursor: url(../images/cursor.svg), text;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+
+input[type="text"]:active {
+  border: none;
+}
+
+input[type="text"]:focus-visible {
+  background: transparent;
+  display: flex;
+  width: 225px;
+  height: 27px;
+  align-items: center;
+  padding-block-start: 4.5px;
+  padding-block-end: 4.5px;
+  padding-inline-start: 0;
+  border-left: none;
+  border-right: none;
+}
+
+label:focus {
+  border: none;
+}
+
+label:has(:focus-visible) {
+  outline: solid 1px #fff;
+  outline-offset: 2px;
+  background: transparent;
+  display: flex;
+  margin-block-start: 5px;
+  padding: 0;
+}
+
+div > label:hover, .search-form__pseudo-checkbox:hover {
+  cursor: url(../images/image\ 52.svg), pointer;
+  text-decoration: underline;
+}
+
+input[type='checkbox']:checked + span {
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 1px #000;
+  outline: solid 1px #fff;
+  outline-offset: 1px;
+  margin-inline-start: 2px;
+  margin-inline-end: 7px;
+  margin-block-start: 3.5px;
+}
+
+.content__card-link_current {
+  background-color: rgba(84, 80, 80, 1);
 }
