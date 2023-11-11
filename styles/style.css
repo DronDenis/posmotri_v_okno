@@ -69,6 +69,15 @@ ol {
   overflow: hidden;
 }
 
+.result__video:focus {
+  outline: none;
+}
+
+.result__video:focus-visible {
+  outline: solid 1px #fff;
+  outline-offset: -2px;
+}
+
 .result__video {
   block-size: 100%;
   inline-size: 100%;
@@ -312,6 +321,7 @@ li:not(:nth-of-type(6n)) {
 .content__card-link:hover {
   cursor: url(../images/image\ 52.svg), pointer;
   text-decoration: underline;
+  text-decoration-color: #fff;
 }
 
 .content__card-link:active {
